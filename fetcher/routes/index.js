@@ -5,7 +5,7 @@ const twitter = require('./twitter');
 const registration = require('./registration');
 
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
+  res.send({text: 'OK'});
 });
 
 router.use(registration);
